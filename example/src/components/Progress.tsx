@@ -17,7 +17,6 @@ export const Progress: React.FC<{ live?: boolean }> = ({ live }) => {
       ) : (
         <View>
           <Slider
-            tapToSeek
             style={{ ...styles.slider, width: progressBarWidth }}
             value={position}
             minimumValue={0}

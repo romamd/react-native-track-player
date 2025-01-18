@@ -14,8 +14,6 @@ export const PlaybackError: React.FC<{
 const styles = StyleSheet.create({
   container: {
     width: '100%',
-    marginVertical: 24,
-    alignSelf: 'center',
   },
   text: {
     color: 'red',

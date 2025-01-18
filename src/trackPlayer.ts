@@ -136,7 +136,11 @@ export async function add(
  * @param track The track to load.
  */
 export async function load(track: Track): Promise<number | void> {
-  return TrackPlayer.load(track);
+  return TrackPlayer.load({
+    ...track,
+    url: resolveImportedAssetOrPath(track.url),
+    artwork: resolveImportedAssetOrPath(track.artwork),
+  });
 }
 
 /**
